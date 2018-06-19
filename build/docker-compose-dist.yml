@@ -1,0 +1,7 @@
+version: '3'
+services:
+  auth2-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile.dist
+    image: docker-registry.onsmartdev.media/oauth2-proxy:v0.0.1

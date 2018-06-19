@@ -1,0 +1,4 @@
+FROM a5huynh/oauth2_proxy:2.2
+
+COPY oauth2_proxy-2.2.1-alpha.linux-amd64 /go/bin/oauth2_proxy
+RUN chmod 755 /go/bin/oauth2_proxy
