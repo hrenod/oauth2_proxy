@@ -155,6 +155,22 @@ OpenID Connect is a spec for OAUTH 2.0 + identity that is implemented by many ma
     -cookie-secure=false
     -email-domain example.com
 
+### Okta Auth Provider
+
+1. Create a new trial project: https://www.okta.com/free-trial/#
+2. Create a new application
+   * Choose Web application
+   * In Base URIs, enter `https://internal.yourcompany.com/`
+   * In Login redirect URIs , enter `https://internal.yourcompany.com/oauth2/callback`
+3. Click Done.
+4. Take note of the **Client ID** and **Client secret**
+5. (Optional) In order to retrieve membership in groups:
+   * Switch to Classic UI
+   * Edit OpenID Connect ID Token
+   * Set Groups claim type to Filter
+   * In Groups claim filter, set `groups` `Regex` `.*`
+   * Save
+
 ## Email Authentication
 
 To authorize by email domain use `--email-domain=yourcompany.com`. To authorize individual email addresses use `--authenticated-emails-file=/path/to/file` with one email per line. To authorize all email addresses use `--email-domain=*`.
