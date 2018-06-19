@@ -1,3 +1,7 @@
+Forked from https://github.com/bitly/oauth2_proxy
+
+Check [Build tools](./build) readme to build a new image.
+
 oauth2_proxy
 =================
 
